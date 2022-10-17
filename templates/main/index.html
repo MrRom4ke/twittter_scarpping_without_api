@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Twt Parser</title>
+</head>
+<body>
+    <h3>Twitter Parser v1.0</h3>
+    <h4>Введите список-url для парсинга</h4>
+    <p>
+        Пример списка:<br>
+        https://twitter.com/tyler<br>
+        https://twitter.com/novogratz<br>
+        https://twitter.com/elonmusk<br>
+        https://twitter.com/MessariCrypto<br>
+        https://twitter.com/CryptoHayes<br>
+    </p>
+    <form method="POST" >
+        {% csrf_token %}
+    <table>
+        {{ urls_form }}
+    </table>
+    <input type="submit" value="Отправить" >
+        <input type="button" onclick="history.back(-1); return false;" value="Назад"/>
+    </form>
+    <form>
+        {{df_main|safe}}
+    </form>
+    <form>
+        {{df_tweets|safe}}
+    </form>
+</body>
+</html>
