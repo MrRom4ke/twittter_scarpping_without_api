@@ -1,42 +1,58 @@
 # twittter_scarpping_without_api
-A simple Twitter scarper without using Twitter API (with snscrape lib)
+A simple Twitter scarper without using Twitter API (used snscrape lib)
 
-название проекта
+## About
 
-краткое описание
+This web application is designed to parse basic twitter account information such as (username, number of followers, number of friends and account description). In addition, for each user, you can get information about the last 10 tweets from the current date, with date and time. For a correct search, you must specify the link in its entirety.
 
-технологии в проекте
+List example: <br>
+https://twitter.com/tyler <br>
+https://twitter.com/novogratz <br>
+https://twitter.com/elonmusk <br>
+https://twitter.com/MessariCrypto <br>
+https://twitter.com/CryptoHayes
 
-инструкции по запуску
+After submitting the form, you get general information about the requested accounts, and when you click on an account, the last 10 tweets are displayed.
 
-автор
+To start a new search, use the "Back" button.
 
-# Это будет большой заголовок
-## Это будет заголовок поменьше
-### Это тоже заголовок, самый маленький
-``` Этот текст будет выглядеть как код. ```
-_Это будет курсив_
-*Это будет жирный текст*
-- Это
-- Будет
-- Список
-- С точечками-буллетами 
+## Tech Stack
 
-# Анфиса для друзей
-### Описание
-Благодаря этому проекту можно будет угощать мороженым друзей из разных городов.
-### Технологии
-Python 3.7
-Django 2.2.19
-### Запуск проекта в dev-режиме
-- Установите и активируйте виртуальное окружение
-- Установите зависимости из файла requirements.txt
+The project is currently running on the following versions:
+
+* Python 3.10.6
+* Django 4.1.2
+* Snscrape 0.4.3.20220106
+
+## Running Locally
+
+To run the project locally first you need to clone the repository:
+
 ```
-pip install -r requirements.txt
-``` 
-- В папке с файлом manage.py выполните команду:
+git clone https://github.com/MrRom4ke/twittter_scarpping_without_api.git
 ```
-python3 manage.py runserver
+
+Create a virtualenv:
+
 ```
+virtualenv venv -p python3
+```
+
+Install the development requirements:
+
+```
+pip install -r requirements/local.txt
+```
+
+Run the local server:
+
+```
+python manage.py runserver
+```
+
+## License
+
+The source code is released under the [MIT License](https://github.com/vitorfs/parsifal/blob/master/LICENSE).
+
 ### Авторы
 Андрей, Стёпа, Лера и Максим 
