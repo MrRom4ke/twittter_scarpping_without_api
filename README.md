@@ -54,5 +54,5 @@ python manage.py runserver
 
 The source code is released under the [MIT License](https://github.com/vitorfs/parsifal/blob/master/LICENSE).
 
-### Авторы
-Андрей, Стёпа, Лера и Максим 
+## Author
+MrRom4ke
